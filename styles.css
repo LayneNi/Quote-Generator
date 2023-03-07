@@ -15,8 +15,7 @@ body {
   padding: 3%;
   width: 32vw;
   height: fit-content;
-  /* min-width: 40%;
-  min-height: 40%; */
+
 }
 
 .card-title{
@@ -54,8 +53,6 @@ body {
 #generate-button {
     display: flex;
   color: white;
-  /* background: rgb(255,255,255);
-    background: linear-gradient(267deg, rgba(255,255,255,1) 0%, rgba(246,88,250,1) 29%); */
     background: rgb(255, 0, 0);
     width: 11%;
     height: 20vh;
@@ -84,33 +81,12 @@ body {
   scrollbar-color: rebeccapurple green;
   scrollbar-width: thin;
 }
-/* hides the checkbox */
-input {
-  display: none;
-}
-
-/* changes the color when selected */
-input:checked~label {
-  /* color: #f658fa; */
-  /* color: #eb48ef; */
-  color:#fc88ff
-}
-
-
 
 /* for styling purpose only */
 label {
   align-self: center;
   font-size: 5em;
 }
-
-/* Cards are split into two columns at 992px or smaller */
-/* @media screen and (max-width: 992px) {
-  .main-block {
-    width: 0%;
-  }
-} */
-  /* Change the header color */
 
 
 
@@ -137,14 +113,12 @@ label {
   .card-body{
     width: 80vw;
     height: fit-content;
-    /* min-width: 40%;
-    min-height: 40%; */
   }
 
   option{
     height: 10%;
   }
-  /* Change the header color */
+
 
 }
 
@@ -170,14 +144,12 @@ label {
   .card-body{
     width: 80vw;
     height: fit-content;
-    /* min-width: 40%;
-    min-height: 40%; */
   }
 
   option{
     height: 10%;
   }
-  /* Change the header color */
+
 
 }
 

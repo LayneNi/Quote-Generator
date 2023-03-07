@@ -8,12 +8,8 @@ document.getElementById("quote-link").style.display = "none";
 
 submitBtnEl.addEventListener("click", function (event) {
     console.log("something");
-    // formEl.classList.add("hide");
-    // populatedDataEl.classList.remove("hide");
     event.preventDefault()
-    // let type = typeEl.options[typeEl.selectedIndex].text;
     fetchApi();
-    get_dynamic_url()
 })
 
 //Function to call API
