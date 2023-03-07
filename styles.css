@@ -1,0 +1,136 @@
+body {
+  background: #000B36
+}
+
+.block{
+  padding: 5%;
+  justify-content:center;
+  border-radius: 3%;
+}
+
+.card-body{
+  border: 2px solid white;
+  border-radius: 5%;
+  box-shadow: 5px 5px 5px rgb(123, 193, 255);
+  padding: 3%;
+}
+
+.dropdown{
+  justify-content: center;
+}
+
+.form-select{
+  width: 10%;
+  color: white;
+  background-color: #0031F5;
+  border: none;
+  margin-top: -2%;
+}
+
+.main-block {
+  display: flex;
+  align-content: center;
+  justify-content:center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  color: white;
+  margin: 2%;
+  align-items: center;
+}
+
+#myPicture{
+  align-self: center;
+  border: #000 solid;
+}
+
+#generate-button {
+    display: flex;
+  color: white;
+  /* background: rgb(255,255,255);
+    background: linear-gradient(267deg, rgba(255,255,255,1) 0%, rgba(246,88,250,1) 29%); */
+    background: rgb(255, 0, 0);
+    width: 11%;
+    height: 200px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  padding: 4%;
+  margin-top: 2%
+}
+
+#generate-button:hover {
+  box-shadow: 0 0 6px 6px rgb(192, 190, 190);
+}
+
+#generate-button:active {
+  font-size: 5%;
+  box-shadow: 0 0 10px #000 inset;
+}
+
+.scroller {
+  width: 300px;
+  height: 285px;
+  overflow-y: scroll;
+  scrollbar-color: rebeccapurple green;
+  scrollbar-width: thin;
+}
+/* hides the checkbox */
+input {
+  display: none;
+}
+
+/* changes the color when selected */
+input:checked~label {
+  /* color: #f658fa; */
+  /* color: #eb48ef; */
+  color:#fc88ff
+}
+
+
+
+/* for styling purpose only */
+label {
+  align-self: center;
+  font-size: 5em;
+}
+
+/* Cards are split into two columns at 992px or smaller */
+/* @media screen and (max-width: 992px) {
+  .main-block {
+    width: 0%;
+  }
+} */
+  /* Change the header color */
+
+
+
+/* Cards are stacked on top of each other at 768px or smaller */
+@media screen and (max-width: 768px) {
+  .main-block {
+    width: 60%;
+    flex-direction: column;
+    height: 100%;
+    min-height: 20%;
+    margin-top: 20px;
+  }
+
+  #myPicture{
+    max-width: 300px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25px;
+  }
+
+  #button{
+    align-items: center;
+    margin-left: 30px;
+  }
+
+  label{
+    align-items: center;
+    margin-left: 25px;
+  }
+
+  /* Change the header color */
+
+}
