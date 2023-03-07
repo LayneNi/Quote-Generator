@@ -1,8 +1,8 @@
-const APIkey = "5P6QO7VJRqnquUEJr7susQ==jNfogauqhz6Oe2kU"
-const quoteApi = "https://api.api-ninjas.com/v1/quotes"
-const categorySelection = document.querySelector("#category")
-const submitBtnEl = document.querySelector(".generate")
-
+const APIkey = "5P6QO7VJRqnquUEJr7susQ==jNfogauqhz6Oe2kU";
+const quoteApi = "https://api.api-ninjas.com/v1/quotes";
+const categorySelection = document.querySelector("#category");
+const submitBtnEl = document.querySelector(".generate");
+const dropDown = document.querySelector(".form-select");
 
 submitBtnEl.addEventListener("click", function (event) {
     console.log("something");
@@ -30,7 +30,6 @@ function fetchApi() {
         console.log(error)
     })
 }
-
 
 
 // categorySelection.addEventListener("click", function (event) {

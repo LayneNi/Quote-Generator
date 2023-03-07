@@ -50,7 +50,7 @@ body {
     background: linear-gradient(267deg, rgba(255,255,255,1) 0%, rgba(246,88,250,1) 29%); */
     background: rgb(255, 0, 0);
     width: 11%;
-    height: 200px;
+    height: 25vh;
   border-radius: 50%;
   justify-content: center;
   align-items: center;
@@ -107,30 +107,26 @@ label {
 /* Cards are stacked on top of each other at 768px or smaller */
 @media screen and (max-width: 768px) {
   .main-block {
-    width: 60%;
-    flex-direction: column;
-    height: 100%;
-    min-height: 20%;
-    margin-top: 20px;
-  }
-
-  #myPicture{
-    max-width: 300px;
     justify-content: center;
     align-items: center;
-    margin-left: 25px;
+    align-self: center;
+    flex-direction: column;
   }
 
-  #button{
-    align-items: center;
-    margin-left: 30px;
+  #generate-button {
+    width: 30vw;
+    height: 30vh;
+    margin-top: 5%;
   }
 
-  label{
-    align-items: center;
-    margin-left: 25px;
+  .form-select{
+    width: 60%;
+    margin-top: 10%;
   }
 
+  option{
+    height: 10%;
+  }
   /* Change the header color */
 
 }
