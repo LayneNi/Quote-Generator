@@ -3,6 +3,8 @@ const quoteApi = "https://api.api-ninjas.com/v1/quotes";
 const categorySelection = document.querySelector("#category");
 const submitBtnEl = document.querySelector(".generate");
 const dropDown = document.querySelector(".form-select");
+document.getElementById("quote-author").style.display = "none";
+document.getElementById("quote-link").style.display = "none";
 
 submitBtnEl.addEventListener("click", function (event) {
     console.log("something");
@@ -97,6 +99,8 @@ const createQuote = function(data){
     // console.log(quoteData[arrayIndex].author.split(" ")[0] + " " + quoteData[arrayIndex].author.split(" ")[1]);
     // document.getElementById("quote-author").setAttribute("href", "https://www.google.com/search?q=" + quoteData[arrayIndex].author.split(" ")[0] + " " + quoteData[arrayIndex].author.split(" ")[1])
     document.getElementById("quote-author").setAttribute("href", "https://www.google.com/search?q=" + quoteData[arrayIndex].author)
+    document.getElementById("quote-author").style.display = "";
     console.log(quoteData[arrayIndex].quote.split(" ")[0] + " " + quoteData[arrayIndex].quote.split(" ")[1] + " " + quoteData[arrayIndex].quote.split(" ")[2] + " " + quoteData[arrayIndex].quote.split(" ")[3] + " " + quoteData[arrayIndex].quote.split(" ")[4] + " " + quoteData[arrayIndex].quote.split(" ")[5] + " " + quoteData[arrayIndex].quote.split(" ")[6] + " " + quoteData[arrayIndex].quote.split(" ")[7] + " " + quoteData[arrayIndex].quote.split(" ")[8] + " " + quoteData[arrayIndex].author);
     document.getElementById("quote-link").setAttribute("href", "https://www.google.com/search?q=" + quoteData[arrayIndex].quote.split(" ")[0] + " " + quoteData[arrayIndex].quote.split(" ")[1] + " " + quoteData[arrayIndex].quote.split(" ")[2] + " " + quoteData[arrayIndex].quote.split(" ")[3] + " " + quoteData[arrayIndex].quote.split(" ")[4] + " " + quoteData[arrayIndex].quote.split(" ")[5] + " " + quoteData[arrayIndex].quote.split(" ")[6] + " " + quoteData[arrayIndex].quote.split(" ")[7] + " " + quoteData[arrayIndex].quote.split(" ")[8] + " " + quoteData[arrayIndex].author)
+    document.getElementById("quote-link").style.display = "";
 }
